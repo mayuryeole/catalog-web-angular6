@@ -1,0 +1,76 @@
+/*--responsive--*/
+
+@media(max-width:1920px) {
+	h1 {
+		font-size: 3.5vw;
+	}
+}
+
+@media(max-width:1024px) {
+	h1 {
+		font-size: 4.5vw;
+	}
+	
+}
+
+@media(max-width:800px) {
+	h1 {
+		font-size: 5vw;
+	}
+	
+}
+
+@media(max-width:480px) {
+	.login form {
+		padding: 7.5vw;
+	}
+	
+	.login form{
+		width:95%;
+	}
+	.ecatlog-txt h1 {
+	color: #fff;
+	font-size: 35px;
+}
+	.table-btns button {
+	width: 100%;
+	margin: 0px 0px;
+}
+}
+
+@media(max-width:440px) {
+	.parent {
+		display: block;
+	}
+	
+	.login form{
+		width:95%;
+	}
+	.ecatlog-txt h1 {
+	color: #fff;
+	font-size: 30px;
+}
+	.table-btns button {
+	width: 100%;
+	margin: 0px 0px;
+}
+}
+
+@media(max-width:320px) {
+	.login form {
+		padding: 25px 8px;
+	}
+	.login form{
+		width:95%;
+	}
+	.ecatlog-txt h1 {
+	color: #fff;
+	font-size: 30px;
+}
+	.table-btns button {
+	width: 100%;
+	margin: 0px 0px;
+}
+}
+
+/*--//responsive--*/

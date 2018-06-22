@@ -1,0 +1,175 @@
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <!-- BEGIN PAGE BREADCRUMB -->
+        <ul class="page-breadcrumb breadcrumb">
+            <li>
+                <a href="">Dashboard</a>
+                <i class="fa fa-circle"></i>
+            </li>
+            <li>
+                <a href="javascript:void(0)">Manage Customer</a>
+            </li>
+        </ul>
+       
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet box grey-cascade">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-list"></i>Update Customer
+                        </div>
+                        <div class="tools">
+                            <a class="collapse" href="javascript:void(0);" data-original-title="" title="">
+                            </a>
+                            <a class="config" data-toggle="modal" href="#portlet-config" data-original-title=""
+                               title="">
+                            </a>
+                            <a class="reload" href="javascript:void(0);" data-original-title="" title="">
+                            </a>
+                            <a class="remove" href="javascript:void(0);" data-original-title="" title="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <form *ngIf="this.customers" [formGroup]="updateCustomer" (ngSubmit)="onSubmit()">
+                        <table>
+                            <tr>
+                                <td>Customer Name:</td>
+                                <td colspan="3">
+                                    <input type="text" [(ngModel)] = "this.customers['customer_name']" formControlName="customer_name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.customer_name.errors }" />
+                                    <div *ngIf="submitted && f.customer_name.errors" class="invalid-feedback">
+                                        <div *ngIf="f.customer_name.errors.required">Customer Name is required</div>
+                                    </div>
+                                
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td>First Name:</td>
+                                <td>
+                                    <input type="text" [(ngModel)] = "this.customers['first_name']" formControlName="first_name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.first_name.errors }" />
+                                    <div *ngIf="submitted && f.first_name.errors" class="invalid-feedback">
+                                        <div *ngIf="f.first_name.errors.required">First Name is required</div>
+                                    </div>
+                                
+                                  </td>
+                                <td>Last Name:</td>
+                                <td>
+                                    <input type="text" [(ngModel)] = "this.customers['last_name']" formControlName="last_name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.last_name.errors }" />
+                                    <div *ngIf="submitted && f.last_name.errors" class="invalid-feedback">
+                                        <div *ngIf="f.last_name.errors.required">Last Name is required</div>
+                                    </div>
+                                
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td>Address Line 1:</td>
+                                <td>
+                                    <textarea type="text" [(ngModel)] = "this.customers['address_1']" class="form-control" formControlName="address_1" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.address_1.errors }" ></textarea>
+                                    <div *ngIf="submitted && f.address_1.errors" class="invalid-feedback">
+                                        <div *ngIf="f.address_1.errors.required">Address 1 is required</div>
+                                    </div>
+                                
+                                  </td>
+                                <td>Address Line 2:</td>
+                                <td>
+                                    <textarea type="text" [(ngModel)] = "this.customers['address_2']" class="form-control" formControlName="address_2" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.address_2.errors }" ></textarea>
+                                    <div *ngIf="submitted && f.address_2.errors" class="invalid-feedback">
+                                        <div *ngIf="f.address_2.errors.required">Address 2 is required</div>
+                                    </div>
+                                
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td>City:</td>
+                                <td>
+                                    <input type="text" [(ngModel)] = "this.customers['city']" formControlName="city" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.city.errors }"  />
+                                    <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                                        <div *ngIf="f.city.errors.required">City is required</div>
+                                    </div>
+                                
+                                  </td>
+                                <td>State:</td>
+                                <td>
+                                    <input type="text" [(ngModel)] = "this.customers['state']" formControlName="state" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.state.errors }" />
+                                    <div *ngIf="submitted && f.state.errors" class="invalid-feedback">
+                                        <div *ngIf="f.state.errors.required">State is required</div>
+                                    </div>
+                                
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td>Postal Code:</td>
+                                <td>
+                                    <input type="text" [(ngModel)] = "this.customers['postal_code']" formControlName="postal_code" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.postal_code.errors }" />
+                                    <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.postal_code.errors.required">Postal Code is required</div>
+                                    </div>
+                                                                
+                                </td>
+                                <td>Phone:</td>
+                                <td>
+                                    <input type="text" [(ngModel)] = "this.customers['phone']" formControlName="phone" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }"/>
+                                    <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                                        <div *ngIf="f.phone.errors.required">Phone is required</div>
+                                    </div>
+                                
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td>Select Division:</td>
+                                <td>
+                                    <select class="form-control" name="division_id" id="division_id">
+                                        <option value="">--select division--</option>
+                                        <option value="1">name</option>
+                                    </select>
+                                    <div *ngIf="submitted && f.division_id.errors" class="invalid-feedback">
+                                        <div *ngIf="f.division_id.errors.required">Division Id is required</div>
+                                    </div>
+                                                                
+                                  </td>
+                                <td>AR ACCT:</td>
+                                <td>
+                                    <input type="text" [(ngModel)] = "this.customers['ar_acct']" formControlName="ar_acct" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.ar_acct.errors }" />
+                                    <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.ar_acct.errors.required">AR ACCT is required</div>
+                                    </div>
+                                
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td colspan="3">
+                                    <input type="text" [(ngModel)] = "this.customers['email']" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                        <div *ngIf="f.email.errors.required">Email is required</div>
+                                    </div>
+                                
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td>Website:</td>
+                                <td colspan="3">
+                                    <input type="text" [(ngModel)] = "this.customers['website']" formControlName="website" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.website.errors }" />
+                                    <div *ngIf="submitted && f.website.errors" class="invalid-feedback">
+                                        <div *ngIf="f.website.errors.required">Website is required</div>
+                                    </div>
+                                                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="btn btn-primary">Update</button>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        </form>
+                    </div>
+                </div>
+                <!-- END PAGE CONTENT INNER -->
+            </div>
+        </div>
+        <!-- END CONTENT -->
+    </div>
+</div>

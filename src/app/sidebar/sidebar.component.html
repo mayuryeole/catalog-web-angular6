@@ -1,0 +1,53 @@
+
+<div *ngIf ="isloggedin">
+  
+<div class="page-sidebar-wrapper">
+    <div class="page-sidebar navbar-collapse collapse">
+    <ul class="page-sidebar-menu " *ngIf ="null != users_type">
+      <li *ngIf ="1 == users_type">
+        <a routerLink="dashboard">
+            <i class="fa fa-tachometer"></i>
+            <span class="title">Dashboard</span>
+        </a>
+      </li>
+      <li *ngIf ="1 == users_type">
+        <a routerLink="dashboard">Manage Global Values
+          <i class="material-icons">supervised_user_circle</i>
+        </a>
+      </li>
+      <li *ngIf ="1 == users_type">
+        <a routerLink="dashboard">Manage Catalog
+          <i class="material-icons">supervised_user_circle</i>
+        </a>
+      </li>
+      <li *ngIf ="1 == users_type">
+        <a routerLink="dashboard">Assign Catalog
+          <i class="material-icons">supervised_user_circle</i>
+        </a>
+      </li>
+      <li *ngIf ="2 == users_type">
+          <a routerLink="catalog">Catalog
+            <i class="material-icons">message</i>
+          </a>
+        </li>
+        <li *ngIf ="2 == users_type" >
+          <a routerLink="customer-list">Customers
+            <i class="material-icons">people</i>
+          </a>
+        </li>
+        <li *ngIf ="2 == users_type">
+            <a routerLink="list-user">Orders/Quotes
+              <i class="material-icons">tab</i>
+            </a>
+          </li>
+          <li *ngIf ="3 == users_type">
+              <a routerLink="catalog">Catalog
+                <i class="material-icons">tab</i>
+              </a>
+            </li>
+            
+           
+    </ul>
+    </div>
+    </div>
+    </div>

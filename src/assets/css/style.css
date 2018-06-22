@@ -1,0 +1,567 @@
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url(../fonts/Roboto-Black.ttf),
+		url(../fonts/Roboto-BlackItalic.ttf),
+		url(../fonts/Roboto-Bold.ttf),
+		url(../fonts/Roboto-Italic.ttf),
+		url(../fonts/Roboto-Light.ttf),
+		url(../fonts/Roboto-LightItalic.ttf),
+		url(../fonts/Roboto-Medium.ttf),
+		url(../fonts/Roboto-Regular.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+blockquote,
+q {
+	quotes: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--start editing from here--*/
+
+a {
+	text-decoration: none;
+}
+
+.txt-rt {
+	text-align: right;
+}
+
+/* text align right */
+
+.txt-lt {
+	text-align: left;
+}
+
+/* text align left */
+
+.txt-center {
+	text-align: center;
+}
+
+/* text align center */
+
+.float-rt {
+	float: right;
+}
+
+/* float right */
+
+.float-lt {
+	float: left;
+}
+
+/* float left */
+
+.pos-relative {
+	position: relative;
+}
+
+/* Position Relative */
+
+.pos-absolute {
+	position: absolute;
+}
+
+/* Position Absolute */
+
+.vertical-base {
+	vertical-align: baseline;
+}
+
+/* vertical align baseline */
+
+.vertical-top {
+	vertical-align: top;
+}
+
+/* vertical align top */
+
+nav.vertical ul li {
+	display: block;
+}
+
+/* vertical menu */
+
+nav.horizontal ul li {
+	display: inline-block;
+}
+
+/* horizontal menu */
+
+img {
+	max-width: 100%;
+}
+
+/*--end reset--*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.login-bg {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 100%;
+	background: url('../images/banner.jpg')no-repeat center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.login {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+}
+.login-bg h1 {
+    font-size: 3.2em;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #184a70;
+    letter-spacing: 2px;
+    text-shadow: 2px 0px 0px #fff;
+/*    margin: 1.1em 1vw .9em;*/
+	 margin: 1.0em 0vw .5em;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.login form {
+    max-width: 550px;
+    margin: 0 5vw;
+    background-size: cover;
+    background: #eee;
+    box-shadow: 2px 2px 17px rgba(41, 40, 40, 0.39);
+    padding: 3.5vw;
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+	border:1px solid #c6c6c6;
+	border-radius: 8px;
+}
+.login label {
+	cursor: pointer;
+	font-size: 14px;
+    color: #707070;
+    float: left;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.agile-field-txt {
+	flex-basis: 100%;
+	-webkit-flex-basis: 100%;
+	margin-bottom: 1.5em;
+}
+
+.login label i {
+	font-size: 1.1em;
+	margin-right: 3px;
+	color:#184a70;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	    width: 100%;
+    color: #000;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    /* line-height: 25px; */
+    padding: 12px 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.49);
+    -webkit-appearance: none;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    border: 1px #cccccc solid;
+}
+.check1 {
+    text-align: left;
+}
+label.check{
+	float: none;;
+}
+.agile_label {
+    text-align: left;
+    margin: 10px 0 0;
+}
+.login.sub {
+	margin-top: 1em;
+	flex-basis: 100%;
+	-webkit-flex-basis: 100%;
+}
+a.right {
+        float: right;
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.login input[type=submit] {
+    color: #f6f6f6;
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: none;
+    background: #184a70;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+	    border: 2px solid #afbec9;
+}
+
+.login input[type=submit]:hover {
+	background: #184a70;
+	color: #fff;
+}
+
+
+/****************************LANDING PAGE*****************************/
+section.main-bg.fullHt {
+    background: #184a70;
+	position: relative;
+}
+.inner-info {
+    position: absolute;
+    top: 50%;
+	transform: translateY(-50%);
+    width: 100%;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+}
+.ecatlog-txt h1 {
+    color: #fff;
+    font-size: 65px;
+	text-align: center;
+}
+
+.ecatlog-txt a {
+    text-decoration: none;
+}
+/***************************REPORT CUSTOMER PAGE****************************/
+.heads_title {
+    background: #184a70;
+    color: #fff;
+    padding: 15px 0px;
+	text-align: left;
+	    margin-bottom: 30px;
+}
+section.sec_report_cust.fullHt {
+	position: relative;
+}
+.inner-info {
+    position: absolute;
+    top: 50%;
+	transform: translateY(-50%);
+    width: 100%;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+}
+
+.inner_report_cust {
+    /* WIDTH: 1000PX; */
+    width: 90%;
+    margin: 0px auto;
+}
+.inner_report_cust table thead tr th {
+    text-align: center;
+    font-size: 15px;
+	 color: #353535;
+}
+.inner_report_cust table tbody tr td {
+    font-size: 14px;
+    font-weight: 500;
+    color: #353535;
+	    cursor: pointer;
+}
+th.all-txt {
+    font-weight: 500;
+	border-top: 1px solid #6fbbf7!important;	
+}
+.heads_title h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.sort {
+    position: relative;
+    float: right;
+    display: inline-flex;
+    top: 25px;
+    /* left: -400px; */
+}
+select.custom-select {
+    /* width: 20px; */
+    height: 25px;
+    line-height: 35px;
+    font-size: 14px;
+}
+.sort label {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 14px;
+    color: #353535;
+}
+.month {
+    margin-left: 10px;
+}
+span.report-txt {
+    position: relative;
+    margin: 0px 26px;
+}
+.heads_title h3 a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+}
+span.report-txt::after {
+    position: absolute;
+    content: ">>";
+    font-size: 20px;
+    font-weight: 500;
+    /* margin: 0px; */
+    left: 64px;
+    top: -3px;
+}
+.table-btns button {
+    background: #353535;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #a4a4a4;
+    /* padding: 10px 30px; */
+    width: 15%;
+    height: 45px;
+    line-height: 0px;
+    margin: 0px 50px;
+    font-weight: 500;
+	transition:300ms linear all;
+}
+.table-btns {
+    margin: 30px 0px;
+}
+
+.table-btns button:hover {
+    background: transparent;
+    border: 2px solid #353535;
+    color: #353535;
+}
+/***************************INVEMTORY REPORT*****************************/
+.sort.inven-sort {
+    top: -15px;
+}
+.record {
+    float: left;
+    position: relative;
+    top: -15px;
+}
+.record label {
+    /* margin-left: 11px; */
+    padding: 0px 15px;
+	text-transform: uppercase;
+    color: #353535;
+	font-size: 13px;
+}
+span.in_per {
+    position: relative;
+    bottom: -5px;
+    left: 10px;
+}
+.top-txt {
+    text-align: initial;
+    display: block;
+    /* float: left; */
+    font-size: 14px;
+}
+.st_txt {
+    float: left;
+}
+.open_hrs {
+    float: right;
+}
+.middle-txt.clearfix {
+    display: block;
+    text-align: initial;
+    padding: 30px 0px;
+    font-size: 14px;
+}
+.billing-in {
+    float: left;
+}
+.pr_el {
+    float: right;
+}
+.bottom-txt.clearfix {
+    font-size: 14px;
+}
+.pr_el p {
+    padding: 5px;
+}
+.bottom-txt table th {
+    text-align: center;
+}
+.open_hrs {
+    float: right;
+    background: #184a70;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+div#store button.close {
+    position: relative;
+    left: 9px;
+    top: -14px;
+}
+.table-responsive{
+	width:100%;
+}
+.table-bordered {
+	border: 0px solid #ddd!important;
+}

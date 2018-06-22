@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width : 1024px) {
+}
+@media screen and (min-width : 992px) and (max-width : 1024px) {
+
+}
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+/*manage global setting*/
+#sample_1_wrapper .col-md-6.col-sm-12, #list_products_wrapper .col-md-6.col-sm-12 {
+  width: 50% !important;
+}
+.price-text-color, .col-item .price h5 {
+  font-size: 12px;
+}
+.separator .btn-details a.hidden-sm {
+  display: block !important;
+  font-size: 12px;
+}
+.photo {
+  height: 270px;
+}
+.col-item .photo img {
+  height: auto;
+}
+.h-manage-width label {
+   padding: 7px 15px 0;
+}
+.h-manage-width {
+    width: 70%;
+}
+}
+@media screen and (max-width : 767px) {
+/*------Dashboard---------*/
+.page-header.navbar .page-top {
+  background: transparent none repeat scroll 0 0;
+  position: absolute;
+  right: 40px;
+  top: -15px;
+  width: auto;
+}
+/*--listing page--*/
+.h-welcome {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+h3.dashboard-head {
+  font-size: 16px;
+}
+.portlet > .portlet-title > .caption {
+  font-size: 14px;
+}
+#sample_1_length > label {
+  display: block;
+  width: 100%;
+}
+/*--manage order page--*/
+.harsh-selector > ul {
+  padding: 0;
+}
+.harsh-selector > ul > li {
+  list-style-type: none;
+  margin: 0 0 15px;
+  float: none;
+  width: 100%;
+}
+.harsh-selector p {
+  margin: 0 0 5px;
+}
+#list_products_length > label {
+  width: 100%;
+}
+#list_products_length .form-control {
+  width: 50% !important;
+}
+/*--login & Registration page--*/
+.custom-form.registration {
+  padding: 30px 15px !important;
+  width: 95% !important;
+}
+/*cart details*/
+.card {
+  padding: 15px 0;
+}
+.h-product-img {
+  float: none;
+  width: 100%;
+}
+.h-right-panel {
+  float: none;
+  width: 100%;
+}
+ul.h-ordered > li {
+  float: none;
+  width: 100%;
+}
+h1.text-center b {
+  font-size: 20px;
+}
+.h-manage-width {
+    width: 100%;
+    margin: 0 0 10px;
+    display: table;
+}
+#list_products_wrapper .col-md-6.col-sm-12 {
+  float: left;
+  width: 50%;
+}
+.pagination li a {
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+}
+
+} 
+@media screen and (min-width : 480px) and (max-width : 767px) {
+}
+@media screen and (max-width : 480px) { 
+#list_products_wrapper .col-md-6.col-sm-12 {
+  float: none !important;
+  width: 100% !important;
+}
+#list_products_length label .form-control {
+  float: right;
+  width: 65% !important;
+  text-align: left;
+}
+#list_products_filter > label {
+  width: 100%;
+}
+#list_products_filter label .form-control {
+  float: right;
+  text-align: left;
+  width: 65% !important;
+}
+} 

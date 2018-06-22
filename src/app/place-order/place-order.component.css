@@ -1,0 +1,26 @@
+.card{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 25px;
+    border: 1px gray;
+    border-style: solid;
+}
+.tab-pane{
+    padding: 20px;
+}
+input[type=radio]:checked + label{
+    background-color: gray;
+    color: white;
+}
+.page-content-wrapper .page-content {
+  min-height: 700px;
+}        
+
+#style_number{
+font-size: 20px; font-weight: 600; letter-spacing: 0.5px;
+}
+.fade:not(.show) {
+
+    opacity: 7.5;
+
+}

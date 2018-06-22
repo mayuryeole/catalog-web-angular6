@@ -1,0 +1,37 @@
+
+
+    <div *ngIf="undefined === customers">Loading...</div>
+<div *ngIf="undefined !== customers">
+  <ul>
+    <li>
+        <table datatable class="table row-border hover" *ngIf="this.temp_var">
+            <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Customer Name</th>
+                  <th>Phone</th>
+                  <th>Country</th>
+                  <!-- <th>Add</th> -->
+                  <th>Edit</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let rec of this.customers">
+                  <td>{{rec.customer_id}}</td>
+                  <td>{{rec.customer_name}}</td>
+                  <td>{{rec.phone}}</td>
+                  <td>{{rec.country}}</td>
+                  
+                  
+                    <td>
+                        <a routerLink = '/edit-customer/{{rec.customer_id}}'>Edit Customer</a>
+               
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+    </li>
+  </ul>
+</div>
